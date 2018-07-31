@@ -1,0 +1,64 @@
+.btn-group{
+    float: left;
+    display:block;
+    margin-top:5px;
+    margin-bottom:5px;
+
+    .btn{
+        float: left;
+        margin-right:5px;
+    }
+}
+
+.btn{
+    display: block;
+    height:35px;
+    line-height: 34px;
+    cursor: pointer;
+    padding: 0 20px;
+    
+    &.btn-rounded{
+        border-radius: 20px;
+    }
+
+    @each $color_name, $color in $colors {
+        @each $color_type, $color_value in $color {
+
+            @if($color_type == 'default'){
+                &.btn-#{$color_name}{
+                    background:linear-gradient($color_value,darken($color_value, 10%));
+                    
+                    color:#fff;
+                    border:1px solid darken($color_value, 10%);
+                    @if($color_name == 'default'){
+                        color:#000;
+                    }
+                    
+                    &.btn-outline{
+                        background: transparent;
+                        color:$color_value;
+                        @if($color_name == 'default'){
+                            color:#000;
+                        }
+                    }
+
+                    &:hover, &:focus{
+                        outline: 0;
+                        color:#fff;
+                        background:linear-gradient(darken($color_value, 10%),darken($color_value, 15%));
+                        border:1px solid darken($color_value, 15%);
+                        @if($color_name == 'default'){
+                            color:#000;
+                        }
+                    }
+                }
+            }
+            
+               
+
+        }
+    }
+
+
+
+}

@@ -1,0 +1,16 @@
+// GRIDS
+// ==========================================================================
+$grid-columns: 12;
+ 
+// FONTS
+// ==========================================================================
+$roboto-font-path: "../fonts/roboto/" !default;
+$nunito-font-path: "../fonts/Nunito_Sans/" !default;
+
+// MEDIA QUIRES
+// ==========================================================================
+$xs: "(max-width: 767px)";
+$sm: "(min-width: 768px) and (max-width: 1024px)";
+$md: "(min-width: 1200px)";
+$lg: "(min-width: 1500px)";
+$xl: "(min-width: 1900px)";

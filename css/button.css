@@ -1,0 +1,15 @@
+.btn-group {
+  float: left;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.btn {
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  border: none;
+  padding: 0 20px;
+}
+/*# sourceMappingURL=button.css.map */

@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "Roboto";
+    src: local(Roboto Thin),
+        url("#{$roboto-font-path}Roboto-Thin.woff2") format("woff2"),
+        url("#{$roboto-font-path}Roboto-Thin.woff") format("woff");
+
+    font-weight: 100;
+}
+@font-face {
+    font-family: "Roboto";
+    src: local(Roboto Light),
+        url("#{$roboto-font-path}Roboto-Light.woff2") format("woff2"),
+        url("#{$roboto-font-path}Roboto-Light.woff") format("woff");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local(Roboto Regular), 
+        url("#{$roboto-font-path}Roboto-Regular.woff2") format("woff2"),
+        url("#{$roboto-font-path}Roboto-Regular.woff") format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local(Roboto Medium),
+        url("#{$roboto-font-path}Roboto-Medium.woff2") format("woff2"),
+        url("#{$roboto-font-path}Roboto-Medium.woff") format("woff");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local(Roboto Bold),
+        url("#{$roboto-font-path}Roboto-Bold.woff2") format("woff2"),
+        url("#{$roboto-font-path}Roboto-Bold.woff") format("woff");
+    font-weight: 700;
+}
+
+/***********************************/
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: local(NunitoSans ExtraLight),
+        url("#{$nunito-font-path}NunitoSans-ExtraLight.ttf") format("ttf");
+
+    font-weight: 100;
+}
+@font-face {
+    font-family: "Nunito Sans";
+    src: local(NunitoSans Light),
+        url("#{$nunito-font-path}NunitoSans-Light.ttf") format("ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: local(NunitoSans Regular), 
+        url("#{$nunito-font-path}NunitoSans-Regular.ttf") format("ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: local(NunitoSans SemiBold),
+        url("#{$nunito-font-path}NunitoSans-SemiBold.ttf") format("ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: local(NunitoSans Bold),
+        url("#{$nunito-font-path}NunitoSans-Bold.ttf") format("ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: local(NunitoSans ExtraBold),
+        url("#{$nunito-font-path}NunitoSans-ExtraBold.ttf") format("ttf");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: local(NunitoSans Black),
+        url("#{$nunito-font-path}NunitoSans-Black.ttf") format("ttf");
+    font-weight: 900;
+}
+
+
+
+
+
+

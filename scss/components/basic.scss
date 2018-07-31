@@ -1,0 +1,83 @@
+.alertfy{
+    display:block;
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-bottom:10px;
+    padding:15px;
+    
+    @each $color_name, $color in $colors {
+        @each $color_type, $color_value in $color {
+
+            @if($color_type == 'default'){
+                &.alertfy-#{$color_name}{
+                    background-color: $color_value;
+                    color:#fff;
+                    @if($color_name == 'default'){
+                        color:#000;
+                    }
+                }
+            }
+               
+
+        }
+    }
+
+    .alertfy-icon{
+        float: left;
+        display: block;
+        width: 10%;
+    }
+    .alertfy-message{
+        float: left;
+        display: block;
+        width: 80%;
+    }
+    .alertfy-close{
+        float: right;
+        display: block;
+    }
+}
+
+
+// PANEL
+.panel{
+    float: left;
+    width: 100%;
+    display: block;
+
+    @each $color_name, $color in $colors {
+        @each $color_type, $color_value in $color {
+
+            @if($color_type == 'default'){
+                &.panel-#{$color_name}{
+                    border:1px solid $color_value;
+                    
+                    .panel-heading{
+                        background:linear-gradient($color_value,darken($color_value, 10%));
+                        border-bottom:1px solid $color_value;
+                        color:#fff;
+                        @if($color_name == 'default'){
+                            color:#000;
+                        }
+                    }
+
+                    .panel-body{
+                        float: left;
+                        width: 100%;
+                        display: block;
+                    }
+
+                    .panel-footer{
+                        float: left;
+                        width: 100%;
+                        display: block;
+
+                    }
+                }
+            }
+               
+
+        }
+    } 
+}
